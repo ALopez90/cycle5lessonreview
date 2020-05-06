@@ -1,3 +1,8 @@
+// NOTE I'm writing this with the assumption that yall have the AWS instance already and access to the connection info!!
+// REVIEW How to find the connection info: Go to the RDS dashboard in the AWS console. On the left-hand side, click 'Databases' and click on the name of the one you want to use. The 'Endpoint' is the host name. The 'Configuration' tab has the username you made. If you forgot the password, click on 'Modify' and there's an option to change the master password.
+// TODO After you install the MySQL extension, you will need to connect to the AWS instance yall created with Jordan on Monday (4th). There should be a MYSQL tab located on the bottom left. Hover over it and click on the plus sign (+) to add a new connection. Enter the host name, username, password and port. You dont need to enter the last bit that it asks for, just enter through that! If entered correctly, the connection should appear in the MySQL tab on the bottom left.
+
+
 // TODO Create a variable for each library you want to use in this file.
 // NOTE This creating variables for each library that was installed. To install the libraries do: 'npm install fs' and 'npm install mysql' in the terminal
 // NOTE Fun fact! If you need to create multiple variables, you simply need to state 'var' once and seperate each variable with a comma (shown below). Jordan is wrong, I am right 😤
@@ -58,5 +63,7 @@ function createUser(user) {
 // TODO Make sure to add this at the end to actually execute the function just created above.
 createUser(user);
 
-// TODO Commented out this to not end the connection
+// NOTE If you entered thhe information correctly, the data should be successfully post into the table. To view the data, simply go to the MySQL tab on the bottom left, right-click the AWS instance and refresh it. Then, right-click the table you just added data to and click on 'Select Top 1000' 
+
+// TODO Comment this out to not end the connection
 // connection.end();
