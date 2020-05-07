@@ -46,7 +46,7 @@ function createUser(user) {
 
         // TODO Connect to and execute a specific MySQL file
         // NOTE In this case, we're connecting to a MySQL file that inserts data into the 'user' table
-        // REVIEW Quick overview of this line of code: You're creating a connection to the MySQL file ('./sql/createUser.sql'), converting it into a string so that 'readFileSync' can read it, and passing in the properties from the user object (user.companyName, user.email, user.FName, user.LastName, user.Role).
+        // REVIEW Quick overview of this line of code: You're creating a connection to the MySQL file ('./sql/createUser.sql'), converting it into a string so that 'readFileSync' can read it, and passing in the properties from the user object (user.companyName, user.email, user.FName, user.LastName, user.Password, user.Role).
         // Those properties will replace the question marks (?) in the SQL file (createUser.sql).
         // NOTE Make sure that the properties being passed in are in order of the columns listed in the SQL file.
         // REVIEW (continued) After the properties, it has the logic to get the rows and any errors, if there are errors, it'll post it, otherwise it'll continue to the console logs.
